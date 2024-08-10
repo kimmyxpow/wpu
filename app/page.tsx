@@ -18,14 +18,14 @@ export default function Home() {
                             <Image src={wpu} alt="wpu" width={40} height={40} />
                             We are Programmers, UNITE!
                         </div>
-                        <h1 className="text-8xl">
+                        <h1 className="text-6xl sm:text-7xl md:text-8xl">
                             Jangan Lupa Titik Koma<span className="inline-block animate-bounce">;</span>
                         </h1>
                         <p className="mx-auto max-w-3xl text-xl">
                             Butuh teman belajar coding? Bergabunglah dengan jutaan subscriber di channel YouTube WPU dan
                             jadilah programmer handal.
                         </p>
-                        <div className="flex justify-center gap-2">
+                        <div className="flex flex-col justify-center gap-2 sm:flex-row">
                             <a
                                 href="https://www.youtube.com/@sandhikagalihwpu"
                                 target="_blank"
@@ -44,7 +44,7 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
-                    <div className="grid grid-cols-3 items-center gap-10">
+                    <div className="grid items-center gap-10 lg:grid-cols-3">
                         <Tilt className="space-y-4 rounded-[3rem] border bg-white p-10 shadow-2xl shadow-zinc-400/20">
                             <span className="inline-block rounded-full bg-zinc-100 px-4 py-2 text-sm">
                                 Course & Tutorial
