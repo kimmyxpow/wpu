@@ -5,27 +5,52 @@ import { Icon } from '@iconify/react'
 import padika from '@/assets/padika.jpg'
 import wpu from '@/assets/wpu.png'
 import Tilt from 'react-parallax-tilt'
-import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 export default function Home() {
     return (
         <>
             <main className="relative flex min-h-dvh items-center bg-zinc-100 py-10">
-                <div className="absolute size-full -translate-y-1/2 rounded-full bg-white"></div>
+                <motion.div
+                    className="absolute size-full -translate-y-1/2 rounded-full bg-white"
+                    initial={{ opacity: 0, y: '-100%' }}
+                    animate={{ opacity: 1, y: '-50%' }}
+                    transition={{ duration: 1, type: 'spring', stiffness: 100, delay: 0.5 }}
+                ></motion.div>
                 <div className="container relative z-10 space-y-12">
                     <div className="space-y-10 text-center">
-                        <div className="flex items-center justify-center gap-2 text-lg font-bold">
+                        <motion.div
+                            className="flex items-center justify-center gap-2 text-lg font-bold"
+                            initial={{ opacity: 0, y: '-100%' }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 1 }}
+                        >
                             <Image src={wpu} alt="wpu" width={40} height={40} />
                             We are Programmers, UNITE!
-                        </div>
-                        <h1 className="text-6xl sm:text-7xl md:text-8xl">
+                        </motion.div>
+                        <motion.h1
+                            className="text-6xl sm:text-7xl md:text-8xl"
+                            initial={{ opacity: 0, y: '-100%' }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 1.2 }}
+                        >
                             Jangan Lupa Titik Koma<span className="inline-block animate-bounce">;</span>
-                        </h1>
-                        <p className="mx-auto max-w-3xl text-xl">
+                        </motion.h1>
+                        <motion.p
+                            className="mx-auto max-w-3xl text-xl"
+                            initial={{ opacity: 0, y: '-100%' }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 1.4 }}
+                        >
                             Butuh teman belajar coding? Bergabunglah dengan jutaan subscriber di channel YouTube WPU dan
                             jadilah programmer handal.
-                        </p>
-                        <div className="flex flex-col justify-center gap-2 sm:flex-row">
+                        </motion.p>
+                        <motion.div
+                            className="flex flex-col justify-center gap-2 sm:flex-row"
+                            initial={{ opacity: 0, y: '-100%' }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 1.6 }}
+                        >
                             <a
                                 href="https://www.youtube.com/@sandhikagalihwpu"
                                 target="_blank"
@@ -42,9 +67,14 @@ export default function Home() {
                             >
                                 Gabung Discord
                             </a>
-                        </div>
+                        </motion.div>
                     </div>
-                    <div className="grid items-center gap-10 lg:grid-cols-3">
+                    <motion.div
+                        className="grid items-center gap-10 lg:grid-cols-3"
+                        initial={{ opacity: 0, y: '100%' }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 2, delay: 2, type: 'spring' }}
+                    >
                         <Tilt className="space-y-4 rounded-[3rem] border bg-white p-10 shadow-2xl shadow-zinc-400/20">
                             <span className="inline-block rounded-full bg-zinc-100 px-4 py-2 text-sm">
                                 Course & Tutorial
@@ -155,7 +185,7 @@ export default function Home() {
                                 </a>
                             </div>
                         </Tilt>
-                    </div>
+                    </motion.div>
                 </div>
             </main>
         </>
