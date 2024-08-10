@@ -21,35 +21,35 @@ export default function Home() {
                     <div className="space-y-10 text-center">
                         <motion.div
                             className="flex items-center justify-center gap-2 text-lg font-bold"
-                            initial={{ opacity: 0, y: '-100%' }}
+                            initial={{ opacity: 0, y: 100 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 1 }}
+                            transition={{ duration: 1, delay: 1, type: 'spring', stiffness: 100 }}
                         >
                             <Image src={wpu} alt="wpu" width={40} height={40} />
                             We are Programmers, UNITE!
                         </motion.div>
                         <motion.h1
                             className="text-6xl sm:text-7xl md:text-8xl"
-                            initial={{ opacity: 0, y: '-100%' }}
+                            initial={{ opacity: 0, y: 100 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 1.2 }}
+                            transition={{ duration: 1, delay: 1.2, type: 'spring', stiffness: 100 }}
                         >
                             Jangan Lupa Titik Koma<span className="inline-block animate-bounce">;</span>
                         </motion.h1>
                         <motion.p
                             className="mx-auto max-w-3xl text-xl"
-                            initial={{ opacity: 0, y: '-100%' }}
+                            initial={{ opacity: 0, y: 100 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 1.4 }}
+                            transition={{ duration: 1, delay: 1.4, type: 'spring', stiffness: 100 }}
                         >
                             Butuh teman belajar coding? Bergabunglah dengan jutaan subscriber di channel YouTube WPU dan
                             jadilah programmer handal.
                         </motion.p>
                         <motion.div
                             className="flex flex-col justify-center gap-2 sm:flex-row"
-                            initial={{ opacity: 0, y: '-100%' }}
+                            initial={{ opacity: 0, y: 100 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 1.6 }}
+                            transition={{ duration: 1, delay: 1.6, type: 'spring', stiffness: 100 }}
                         >
                             <a
                                 href="https://www.youtube.com/@sandhikagalihwpu"
@@ -73,7 +73,7 @@ export default function Home() {
                         className="grid items-center gap-10 lg:grid-cols-3"
                         initial={{ opacity: 0, y: '100%' }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 2, delay: 2, type: 'spring' }}
+                        transition={{ duration: 1.8, delay: 2, type: 'spring' }}
                     >
                         <Tilt className="space-y-4 rounded-[3rem] border bg-white p-10 shadow-2xl shadow-zinc-400/20">
                             <span className="inline-block rounded-full bg-zinc-100 px-4 py-2 text-sm">
