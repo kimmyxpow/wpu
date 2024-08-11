@@ -75,7 +75,7 @@ export default function Home() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.8, delay: 2, type: 'spring' }}
                     >
-                        <Tilt className="space-y-4 rounded-[3rem] border bg-white p-10 shadow-2xl shadow-zinc-400/20">
+                        <Tilt className="space-y-4 rounded-[3rem] border bg-white p-10 shadow-2xl shadow-zinc-400/20 [transform-style:preserve-3d] [&>*]:[transform:translateZ(30px)]">
                             <span className="inline-block rounded-full bg-zinc-100 px-4 py-2 text-sm">
                                 Course & Tutorial
                             </span>
@@ -121,7 +121,7 @@ export default function Home() {
                                 </a>
                             </div>
                         </Tilt>
-                        <Tilt className="space-y-4 rounded-[3rem] border bg-white p-10 text-center shadow-2xl shadow-zinc-400/20">
+                        <Tilt className="space-y-4 rounded-[3rem] border bg-white p-10 text-center shadow-2xl shadow-zinc-400/20 [transform-style:preserve-3d] [&>*]:[transform:translateZ(30px)]">
                             <span className="inline-block rounded-full bg-zinc-100 px-4 py-2 text-sm">The Man</span>
                             <Image
                                 className="mx-auto rounded-[3rem]"
@@ -163,14 +163,14 @@ export default function Home() {
                                 </a>
                             </div>
                         </Tilt>
-                        <Tilt className="space-y-4 rounded-[3rem] border bg-white p-10 shadow-2xl shadow-zinc-400/20">
+                        <Tilt className="space-y-4 rounded-[3rem] border bg-white p-10 shadow-2xl shadow-zinc-400/20 [transform-style:preserve-3d] [&>*]:[transform:translateZ(30px)]">
                             <span className="inline-block rounded-full bg-zinc-100 px-4 py-2 text-sm">Community</span>
                             <h2 className="text-2xl">Tempat Berkumpul Puluhan Ribu Programmer di Indonesia</h2>
                             <p>
                                 Komunitas WPU menjadi tempat yang sempurna untuk belajar, berbagi, dan berkolaborasi
                                 dalam proyek-proyek menarik.
                             </p>
-                            <div className="grid -space-y-px">
+                            <div className="grid">
                                 <a
                                     href="https://discord.gg/wpu"
                                     target="_blank"

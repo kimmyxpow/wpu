@@ -4,7 +4,10 @@ import './globals.css'
 
 const sans = Raleway({ subsets: ['latin'] })
 
+const url = process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'
+
 export const metadata: Metadata = {
+    metadataBase: new URL(url),
     title: 'WPU - We are Programmers, UNITE!',
     description: 'Komunitas pembelajar pemrograman web. Berbagi ilmu dan pengalaman bersama.',
     keywords:
@@ -12,14 +15,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'WPU - We are Programmers, UNITE!',
         description: 'Komunitas pembelajar pemrograman web. Berbagi ilmu dan pengalaman bersama.',
-        url: 'https://wpu.unpas.ac.id',
+        url: url,
         images: '/banner.png'
     },
     twitter: {
         title: 'WPU - We are Programmers, UNITE!',
         description: 'Komunitas pembelajar pemrograman web. Berbagi ilmu dan pengalaman bersama.',
         images: '/banner.png',
-        site: 'https://wpu.unpas.ac.id'
+        site: url
     }
 }
 
