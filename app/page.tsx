@@ -172,12 +172,24 @@ export default function Home() {
                             </p>
                             <div className="grid -space-y-px">
                                 <a
-                                    href="https://www.instagram.com/wpustore.id"
+                                    href="https://discord.gg/wpu"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="group flex items-center justify-between border-y py-3 text-gray-500 transition-all hover:text-gray-800"
                                 >
                                     Gabung Discord
+                                    <Icon
+                                        icon="tabler:arrow-up-right"
+                                        className="translate-y-2 text-2xl opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                                    />
+                                </a>
+                                <a
+                                    href="https://github.com/bellshade"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group flex items-center justify-between border-y py-3 text-gray-500 transition-all hover:text-gray-800"
+                                >
+                                    Kontribusi Open-Source Projects
                                     <Icon
                                         icon="tabler:arrow-up-right"
                                         className="translate-y-2 text-2xl opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
